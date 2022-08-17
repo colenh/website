@@ -1,4 +1,4 @@
-import Technology from './Technology';
+import Technology from './technology';
 
 export default function Stack(props) {
     const stack = [
