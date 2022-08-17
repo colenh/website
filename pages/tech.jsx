@@ -1,7 +1,7 @@
 
 import Helmet from 'react-helmet';
 import { motion } from 'framer-motion';
-import StackList from "./components/Stack";
+import StackList from "./components/stack";
 import Technologies from './components/technologies';
 import Hardware from './components/hardware';
 
