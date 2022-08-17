@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 import Helmet from 'react-helmet';
 import Image from 'next/image';
 import Link from 'next/link';
-import { DesktopComputerIcon, HomeIcon, InboxIcon, LightBulbIcon, QuestionMarkCircleIcon } from '@heroicons/react/solid';
+import { DesktopComputerIcon, HomeIcon, InboxIcon, LightBulbIcon, MailIcon, QuestionMarkCircleIcon } from '@heroicons/react/solid';
 
 const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
@@ -87,7 +87,7 @@ function App({ Component, pageProps }) {
           </Link>
           <Link href='/contact'>
             <div className='relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-[#2e2e2e] text-white hover:text-gray-400 hover:rounded-xl rounded-3xl transition-all duration-300 ease-linear cursor-pointer shadow-lg group'>
-              <InboxIcon className='h-7' />
+              <MailIcon className='h-7' />
               <span className='absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-[#2e2e2e] text-xl font-bold transition-all duration-100 scale-0 origin-left group-hover:scale-100'>
                 Contact
               </span>
