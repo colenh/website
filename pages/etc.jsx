@@ -21,7 +21,6 @@ export default function etcetera(props) {
                 <li>I absolutely love <a target='_blank' href='https://startpage.com'>Startpage</a>, and definitely recommend them.</li>
                 <li>I use the cow.yoga domain as a catch-all email address for a few services, and for some self-hosting projects.</li>
                 {/* <li>My resume is located <a target='_blank' href='/resume.pdf'>here</a>.</li> */}
-                { props.user ? <li>Appears you used the test OAuth endpoint on this website, which was made by code from <a href="https://alistair.blog">alistair's blog</a> and your user is {props.user.username}#{props.user.discriminator}.</li> : null}
             </motion.ul>
         </>
     );
