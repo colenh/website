@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      a {
+        text-decoration: none;
+        color: #cfcfcf;
+      }
+
+      a:hover {
+        color: #ffffff;
+      }
+
+      #umb {
+        color: #9CCA87 !important;
+      }
+
+      #umb:hover {
+        color: #6E985A !important;
+      }
+    </style>
+    <title>cole harris</title>
+  </head>
+  <body style="background: #1c1b22; color: white;">
+    hi, i'm cole harris.<br/><br/>
+    <span id="age">15</span>y/o full-stack software engineer<br/>
+    senior product manager @ <a href="https://umbrecil.works" id="umb">umbrecil.works</a><br/><br/>
+    --<br/><br/>
+    📧 <a href="mailto:me@coleh.lol">me@coleh.lol</a><br/>
+    🐦 <a href="https://twitter.com/colenh_">twitter.com/colenh_</a><br/>
+    💻 <a href="https://github.com/colenh">github.com/colenh</a><br/>
+    💼 <a href="https://linkedin.com/in/colenh/">linkedin.com/colenh/</a>
+  </body>
+    <script>
+        const element = document.getElementById("age");
+        const BIRTH = new Date('August 22, 2007 07:00:00');
+        const YEAR_MILLIS = 31556952000;
+        const age = Math.floor((Date.now() - BIRTH.getTime()) / YEAR_MILLIS)
+        element.innerHTML = age;
+    </script>
+</html>
