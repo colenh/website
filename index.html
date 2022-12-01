@@ -1,60 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
-    <link rel='apple-touch-icon' href='/favicon.ico' />
-    <style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel='shortcut icon' href='./favicon.ico' type='image/x-icon' />
+  <link rel='apple-touch-icon' href='./favicon.ico' />
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      font-family: 'Inter', sans-serif;
+    }
+
+    @supports (font-variation-settings: normal) {
       :root {
-        font-family: "Times New Roman", serif;
+        font-family: 'Inter var', sans-serif;
       }
+    }
+  </style>
+  <title>cole harris</title>
+</head>
 
-      a {
-        text-decoration: none;
-        color: #cfcfcf;
-      }
+<body class="bg-[#151218] text-[#969696] p-[30px] text-[16px]">
+  <p class="text-[#cdcdcd] text-[18px]">cole harris</p>
+  <p class="mb-4">full-stack engineer from beckley, wv</p>
 
-      a:hover {
-        color: #ffffff;
-      }
+  <p class="text-[#cdcdcd] text-[17px] mb-1">// projects</p>
+  <ul class="list-disc list-inside mb-5">
+    <li class="ml-2"><a class="hover:text-[#6e985a] cursor-pointer" href="https://umbrecil.com">umbrecil</a> - all-in-one hiring suite; manage resumes, interviews, and applications all from one platform.</li>
+    <li class="ml-2"><a class="hover:text-[#6e53be] cursor-pointer" href="https://eastsideapp.com">eastside</a> - custom discord bots and roblox services</li>
+  </ul>
 
-      #umb {
-        color: #9cca87 !important;
-      }
+  <p class="text-[#cdcdcd] text-[17px] mb-1">// contact</p>
+  <ul class="list-disc list-inside mb-5">
+    <li class="ml-2">email - <a class="hover:text-[#cdcdcd] cursor-pointer" href="mailto:me@colenh.dev">me@colenh.dev</a></li>
+    <li class="ml-2">github - <a class="hover:text-[#cdcdcd] cursor-pointer" href="https://github.com/colenh">@colenh</a></li>
+    <li class="ml-2">linkedin - <a class="hover:text-[#cdcdcd] cursor-pointer" href="https://linkedin.com/in/colenh">/in/colenh</a></li>
+  </ul>
+</body>
 
-      #umb:hover {
-        color: #6e985a !important;
-      }
-
-      #esi {
-        color: #8464e4 !important;
-      }
-
-      #esi:hover {
-        color: #6e53be !important;
-      }
-    </style>
-    <title>cole harris</title>
-  </head>
-  <body style="background: #1c1b22; color: white">
-    <span style="font-weight: bold;">hi, i'm cole harris.</span><br /><br />
-    <span id="age">15</span>y/o full-stack software engineer<br />
-    senior product manager @
-    <a href="https://umbrecil.works" id="umb">umbrecil.works</a><br />
-    frontend engineer @
-    <a href="https://eastsideapp.com" id="esi">eastside</a><br /><br />
-    --<br /><br />
-    📧 <a href="mailto:me@colenh.dev">me@colenh.dev</a><br />
-    💻 <a href="https://github.com/colenh">github.com/colenh</a><br />
-    💼 <a href="https://linkedin.com/in/colenh/">linkedin.com/colenh</a>
-  </body>
-  <script>
-    const AGE_ELEMENT = document.getElementById("age");
-    const BIRTH = new Date("August 22, 2007 07:00:00");
-    const YEAR_MILLIS = 31556952000;
-    const AGE = Math.floor((Date.now() - BIRTH.getTime()) / YEAR_MILLIS);
-    AGE_ELEMENT.innerHTML = AGE;
-  </script>
 </html>
